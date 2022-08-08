@@ -1,10 +1,10 @@
 import json
 
-f1=open('resources/sensorMetadata.json')
+f1=open('sensorMetadata.json')
 sensorDict = json.load(f1)
 
 
-f2=open('resources/all_cloud_sensors.json')
+f2=open('all_cloud_sensors.json')
 cloudDict=json.load(f2)
 
 cloudSensorsAlias=[k["alias"] for k in cloudDict["data"]["activeSensors"]]
